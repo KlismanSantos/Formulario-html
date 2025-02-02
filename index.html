@@ -39,6 +39,42 @@
             </select>
          </div>
          <!-- 8 - multiplas opçoes -->
+          <div>
+            <label for="itens">Selecione os itens desejados</label>
+            <select name="itens" multiple>
+                <option value="pera">Pêra</option>
+                <option value="feijao">Feijão</option>
+                <option value="arroz">Arroz</option>
+            </select>
+          </div>
+          <!-- 9 - textarea -->
+           <div>
+            <label for="comment">Escreva abaixo o que você achou do post:</label>
+            <textarea name="comment" cols="30" rows="30"></textarea>
+           </div>
+           <!-- 10 - filedset e legend -->
+            <div>
+                <fieldset>
+                    <legend>preencha as suas informações:</legend>
+                    <label for="firstname">Nome:</label>
+                    <input type="text" name="firstname">
+                    <label for="lastname">Sobrenome:</label>
+                    <input type="text" name="lastname">
+                </fieldset>
+            </div>
+
+            <!-- 11 - datalist -->
+             <div>
+                <label for="flavor">Escolha o sabor:</label>
+                <input type="text"  list="flavors" name="flavor">
+
+                <datalist id="flavors">
+                    <option value="cereja">Cereja</option>
+                    <option value="morango">morango</option>
+                    <option value="uva">uva</option>
+                    <option value="chocolate">chocolate</option>
+                </datalist>
+             </div>
         <!-- 5 - Envio de form -->
         <input type="submit" value="enviar">
     </form>
